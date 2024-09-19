@@ -52,7 +52,7 @@ token 参数 decode 后的信息，参考 `src/auth/jwt.ts` 文件，根据需�
 
 ## Credits
 
-- [worker-auth-providers)](https://github.com/subhendukundu/worker-auth-providers)
+- [worker-auth-providers](https://github.com/subhendukundu/worker-auth-providers)
 
 ## User Cases
 
