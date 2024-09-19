@@ -2,7 +2,7 @@
 
 适合独立开发者使用的 Google 登录，基于 Cloudflare Workers 实现 OAuth 2.0。文档仓促，多多包含。
 
-## 特点
+## Features
 
 - 代码全靠抄！！！
 - 删了大部分代码，仅保留谷歌登录
@@ -10,7 +10,7 @@
 - 一套服务支持多个域名，不同的域名使用不同的 OAuth 配置（在 Cloudflare 上连接多个域名即可）
 - 支持 JWT 签名（废话）
 
-## Cloudflare KV 配置
+## Cloudflare KV Settings
 
 ```toml
 [[kv_namespaces]]
@@ -18,7 +18,7 @@ binding = "oauth_settings"
 id = "xxxx"
 ```
 
-## Google OAuth 相关配置
+## Google OAuth Settings
 
 ```typescript
 interface OAuthConfig {
@@ -37,7 +37,7 @@ interface OAuthConfig {
 oauth.example.com = {"googleClientId": "xxx", "googleClientSecret": "xxx", "googleCallbackUrl": "xxx", "jwtToken": "xxx", "successUrl": "xxx", "maxAgeInDays": 1}
 ```
 
-## 使用
+## Usage
 
 在页面中添加登录链接即可
 
@@ -53,3 +53,8 @@ token 参数 decode 后的信息，参考 `src/auth/jwt.ts` 文件，根据需�
 ## Credits
 
 - [worker-auth-providers)](https://github.com/subhendukundu/worker-auth-providers)
+
+## User Cases
+
+- https://www.twillot.com/
+- https://www.shipsuperfast.com
