@@ -1,13 +1,13 @@
 # OAuth 2.0 Google via Cloudflare Workers
 
-适合独立开发者使用的 Google 登录，基于 Cloudflare Workers 实现 OAuth 2.0。
+适合独立开发者使用的 Google 登录，基于 Cloudflare Workers 实现 OAuth 2.0。文档仓促，多多包含。
 
 ## 特点
 
-- COPY from [worker-auth-providers)](https://github.com/subhendukundu/worker-auth-providers)
-- 删除了大部分代码，仅保留谷歌登录
-- 总体逻辑简单，一个链接跳转成功后回到业务方
-- 一套服务支持多个域名，在 Cloudflare 上连接多个域名即可
+- 代码全靠抄！！！
+- 删了大部分代码，仅保留谷歌登录
+- 逻辑简单，一个链接跳转授权后返回业务方
+- 一套服务支持多个域名，不同的域名使用不同的 OAuth 配置（在 Cloudflare 上连接多个域名即可）
 - 支持 JWT 签名（废话）
 
 ## Cloudflare KV 配置
