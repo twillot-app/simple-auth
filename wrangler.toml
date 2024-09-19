@@ -1,0 +1,8 @@
+name = "ssf-oauth"
+compatibility_date = "2024-08-30"
+workers_dev = false
+
+
+[[kv_namespaces]]
+binding = "oauth_settings"
+id = ""
